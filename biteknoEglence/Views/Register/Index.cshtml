@@ -1,0 +1,80 @@
+﻿@model EntityLayer.Concrete.Member
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/SideLayout.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<div id="contact-wrapper">
+    <div id="contact">
+        <div class="inner-wrapper">
+            <div class="row">
+                <div class="container">
+
+                    <h2 class="tittle">
+                        Üye Kayıt Sayfası
+                    </h2>
+                    <div class="row">
+
+                        <div id="comment-form">
+
+                            @using (Html.BeginForm("Index", "Register", FormMethod.Post))
+                            {
+                                <div class="form-group">
+                                    <div class="col-sm-4">
+                                        <label>Adınız</label>
+                                        @Html.TextBoxFor(x => x.MemberName, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.MemberName, "", new { @class = "text-danger" })
+                                        @*<input type="text" name="MemberName" class="form-control" placeholder="İsim">*@
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Şifre</label>
+                                        @Html.TextBoxFor(x => x.MemberPassword, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.MemberPassword, "", new { @class = "text-danger" })
+                                        @*<input type="password" name="MemberPassword" class="form-control" placeholder="Şifre">*@
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Mail Adresiniz</label>
+                                        @Html.TextBoxFor(x => x.MemberMail, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.MemberMail, "", new { @class = "text-danger" })
+                                        @*<input type="text" name="MemberMail" class="form-control" placeholder="Email">*@
+                                    </div>
+
+
+                                    @*<div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Hakkında">
+                </div>*@
+                                <div class="col-sm-4">
+                                    <label>Şifre Tekrar</label>
+                                    @Html.TextBoxFor(x => x.PasswordConfirm, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(x => x.PasswordConfirm, "", new { @class = "text-danger" })
+                                    @*<input type="password" name="PasswordConfirm" class="form-control" placeholder="Şifre Tekrar">*@
+                                </div>
+                                    <div class="col-sm-4">
+                                        <label>Görsel Yolu</label>
+                                        @Html.TextBoxFor(x => x.MemberImage, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(x => x.MemberImage, "", new { @class = "text-danger" })
+                                        @*<input type="text" name="MemberImage" class="form-control" placeholder="Görsel">*@
+                                    </div>
+                                </div> 
+                                <button type="submit" id="btn1" class="readmore">Gönder</button>
+                            }
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="btn1">test</button>
+                    <script>
+                        $('btn1').click(function () {
+
+                            SweetAlert("Başarıyla kaydoldunuz, bilgileriniz gizlilikle korunur!");
+
+
+                        });
+                    </script>
+                </div>
+            </div>
+            <h2>____________</h2>
+        </div>
+    </div>
+</div>

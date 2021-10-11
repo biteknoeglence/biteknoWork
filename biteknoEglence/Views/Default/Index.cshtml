@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<div id="body-wrapper">
+
+    <!-- Services
+    ================================================== -->
+    @await Html.PartialAsync("OurService", "Default")
+    <!--/#services-->
+    <!-- Portfolio
+    ================================================== -->
+    @await Html.PartialAsync("Portfolio", "Default")
+    <!--/#portfolio-->
+    <!-- About us
+    ================================================== -->
+    @await Html.PartialAsync("About", "Default")
+    <!--/#about-us-->
+    <!-- Team
+    ================================================== -->
+    @await Html.PartialAsync("Comment", "Default")
+    <!--/#team-->
+    <!-- Client
+    ================================================== -->
+    @await Html.PartialAsync("Client", "Default")
+    <!-- /#client -->
+    ================================================== -->
+    @await Html.PartialAsync("Blog", "Default")
+
+    <!--/#blog-->
+    <!-- Online Education
+    ================================================== -->
+    @await Html.PartialAsync("Education", "Default")
+
+    <!--/#services-->
+    <!-- Free Support
+    ================================================== -->
+    @await Html.PartialAsync("FreeSupport", "Default")
+    <!--/#portfolio-->
+    <!-- Take Price
+    ================================================== -->
+    @await Html.PartialAsync("TakePrice", "Default")
+    <!--/#about-us-->
+    <!-- Send Cv
+    ================================================== -->
+    @await Html.PartialAsync("SendCv", "Default")
+    <!--/#team-->
+    <!-- Contact
+    ================================================== -->
+    @await Html.PartialAsync("Contact", "Default")
+    <!--/#contact-wrapper-->
+</div>
+
+

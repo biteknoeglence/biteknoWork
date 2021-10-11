@@ -15,9 +15,14 @@ namespace EntityLayer.Concrete
         public string MemberAbout { get; set; }
         public string MemberMail { get; set; }
         public string MemberPassword { get; set; }
+        public string PasswordConfirm { get; set; }
+
         public string MemberImage { get; set; }
         public bool MemberStatus { get; set; }
         public DateTime MemberDate { get; set; }
         public bool MemberRole { get; set; }
+
+        public List<Product> Products { get; set; }
+
     }
 }

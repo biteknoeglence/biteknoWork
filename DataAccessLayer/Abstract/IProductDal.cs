@@ -9,5 +9,8 @@ namespace DataAccessLayer.Abstract
 {
     public interface IProductDal : IGenericDal<Product>
     {
+        List<Product> GetListWithHeading();
+        List<Product> GetListWithPart();
+        List<Product> GetListWithCategory();
     }
 }

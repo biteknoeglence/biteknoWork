@@ -1,0 +1,81 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>Sweep - Onepage Responsive HTML5 Template</title>
+
+    <link href="~/TemaSweep/css/reset.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link href="~/TemaSweep/css/bootstrap.css" rel="stylesheet">
+    <link href="~/TemaSweep/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/TemaSweep/css/fontello/css/fontello.css" rel="stylesheet">
+    <link href="~/TemaSweep/css/jquery.bxslider.css" rel="stylesheet">
+    <link href="~/TemaSweep/css/style.css" rel="stylesheet">
+    <link href="~/TemaSweep/css/media-query.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="body-inner-wrapper">
+        <!-- Navbar
+    ================================================== -->
+        @await Html.PartialAsync("Menu")
+        <!-- Slideshow
+    ================================================== -->
+        @await Html.PartialAsync("Slider")
+        <!--/#main-slider-->
+
+        @RenderBody()
+        <!--/.body-wrapper-->
+
+        <!-- Bottom
+    ================================================== -->
+        @await Html.PartialAsync("Socialnet")
+        <!--/#bottom-->
+
+        <!-- Modal Window
+    ================================================== -->
+        <div id="modal-window-wrapper" class="blog-style">
+            <div id="modal-window" class="left-top-fold">
+                <div id="modal-window-box">
+                    <div class="inner-wrapper">
+                        <div class="row">
+                            <div id="modal-window-content" class="container">
+                                <div>
+                                    <!-- Modal window contents goes here -->
+                                </div>
+                            </div>
+                            <div class="modal-loading">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-overlay"></div>
+        </div>
+    <!--/#Modal Window-->
+
+    </div>
+    <!--/.body-inner-wrapper-->
+
+    <script src="~/TemaSweep/js/jquery.min.js"></script>
+    <script src="~/TemaSweep/js/bootstrap.min.js"></script>
+    <script src="~/TemaSweep/js/jquery.easing.min.js"></script>
+    <script src="~/TemaSweep/js/jquery.bxslider.js"></script>
+    <script src="~/TemaSweep/js/jquery.nicescroll.min.js"></script>
+    <script src="~/TemaSweep/js/waypoints.min.js"></script>
+    <script src="~/TemaSweep/js/themehippo.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="~/TemaSweep/js/script.js"></script>
+
+</body>
+</html>

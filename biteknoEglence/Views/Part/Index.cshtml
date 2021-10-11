@@ -1,0 +1,2004 @@
+﻿@using EntityLayer.Concrete
+@model List<Part>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<div id="body-wrapper">
+
+    <!-- Services
+    ================================================== -->
+    <div id="services-wrapper">
+        <div id="services">
+            <div class="inner-wrapper">
+                <div class="container">
+                    <h2>Hizmetlerimize <span>Göz Atın</span></h2>
+
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-diamond"></i>
+
+                                <h3>Web Geliştirme</h3>
+
+                                <p>
+                                    Her türlü web projenizi Asp, Php, Javascript, Css, Bootstrap,modern ve esnek Net Core ile geliştirelim.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-lightbulb"></i>
+
+                                <h3>Yenilikçi Fikirler</h3>
+
+                                <p>
+                                    Sıradışı fikirler ile işinizi birlikte büyütelim.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-beaker"></i>
+
+                                <h3>Profesyonel Çözümler</h3>
+
+                                <p>
+                                    Her biri kendi alanında uzman ekibimizle, ihtiyaçlarınıza uzman görüşüyle hizmetinizdeyiz.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-pencil"></i>
+
+                                <h3>Web Tasarım</h3>
+
+                                <p>
+                                    Estetik, şık, kullanışlı siteler ile müşterilerinizi etkileyin.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-paper-plane"></i>
+
+                                <h3>Masaüstü/Mobil Uygulama</h3>
+
+                                <p>
+                                    İster işiniz ister kişisel projeleriniz için uygulama geliştirme hizmeti...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-star"></i>
+
+                                <h3>3 Boyutlu Tasarım / Baskı</h3>
+
+                                <p>
+                                    Promosyon, hediyelik veya teknik parçalar üretmek bizim işimiz. Fikir-Tasarım-Üretim aşamalarında hizmetinizdeyiz.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-heart"></i>
+
+                                <h3>Markalaşma</h3>
+
+                                <p>
+                                    Ön Görüşme ve Marka Tanımlama, Rakip Firmaların İncelenmesi, Tasarım Araştırması, Tasarım Eksizi ve Ön Tasarım, Sunum Yapılması, Tasarım Sürecinin Tamamlanması...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-photo"></i>
+
+                                <h3>Grafik Tasarım</h3>
+
+                                <p>
+                                    Logo Tasarımı, Kurumsal Kimlik Tasarımı, Banner Tasarımı, Broşür-El ilanı Tasarımı, Katalog Tasarımı, Ambalaj Tasarımı, Menü Tasarımı...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/#services-->
+    <!-- Portfolio
+    ================================================== -->
+    <div id="portfolio-wrapper">
+        <div id="portfolio">
+            <div class="inner-wrapper">
+                <div class="row">
+                    <div class="container">
+                        <h2>Portföyümüze <span>Göz Atın</span></h2>
+
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div id="portfolio-container">
+                                    <ul id="portfolio-items">
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/1.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-info rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Web Tasarım, Geliştirme,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/2.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-check rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Web Tasarım,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/3.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-cog rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Menü Tasarımı,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/4.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-pencil rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Katalog Tasarımı,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/5.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-rocket rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">3d Baskı,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/4.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa fa-thumbs-o-up rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Masaüstü Uygulama Geliştirme,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/3.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-info rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Sosyal Ağ Yazılım,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/2.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-wrench rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">3d Tasarım, Baskı</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/1.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-magic rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Broşür Tasarımı,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/2.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-info rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Mobil Uygulama Geliştirme,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="portfolio-directions">
+                                    <span class="prev-items rounded"><i class="fa fa-angle-left"></i></span>
+                                    <span class="next-items rounded"><i class="fa fa-angle-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/#portfolio-->
+    <!-- About us
+    ================================================== -->
+    <div id="aboutus-wrapper">
+        <div id="aboutus">
+            <div class="inner-wrapper">
+                <div class="row">
+                    <div class="container">
+                        <h2>Hakkımızda <span> Daha Fazlasını Öğrenin</span></h2>
+
+                        <div class="row contents">
+                            <div class="col-md-6">
+                                <p>
+                                    On the other hand, we denounce with righteous indignation and dislike men who are
+                                    so
+                                    beguiled and demoralized by the charms of pleasure of the moment, so blinded by
+                                    desire,
+                                    that they cannot foresee the pain and trouble that are bound to ensue; and equal
+                                    blame
+                                    belongs to those who fail in their duty through weakness of will, which is the same
+                                    as
+                                    saying through shrinking from toil and pain.
+                                </p>
+
+                                <p>
+                                    These cases are perfectly simple and easy to distinguish. In a free hour, when our
+                                    power
+                                    of choice is untrammelled and when nothing prevents our being able to do what we
+                                    like
+                                    best,
+                                </p>
+
+                                <p>
+                                    every pleasure is to be welcomed and every pain avoided. But in certain
+                                    circumstances
+                                    and owing to the claims of duty or the obligations of business it will frequently
+                                    occur
+                                    that pleasures have to be repudiated and annoyances accepted. The wise man
+                                    therefore
+                                    always holds in these matters to this principle of selection: he rejects pleasures
+                                    to
+                                    secure other greater pleasures, or else he endures pains to avoid worse pains.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Our Skills</h3>
+
+                                <p>
+                                    every pleasure is to be welcomed and every pain avoided. But in certain
+                                    circumstances
+                                    and
+                                    owing to the claims of duty or the obligations of business it will frequently occur
+                                    that
+                                    pleasures have to be repudiated
+                                </p>
+
+                                <div class="progress-bars">
+                                    <div class="skill-progress" data-skill="75%">CSS</div>
+                                    <div class="skill-progress" data-skill="60%">HTML</div>
+                                    <div class="skill-progress" data-skill="90%">PHP</div>
+                                    <div class="skill-progress" data-skill="55%">Photoshop</div>
+                                </div>
+                                <div class="connect">
+                                    <h3>Bizimle İletişime Geçin</h3>
+
+                                    <div class="social-shares">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/#about-us-->
+    <!-- Team
+    ================================================== -->
+    <div id="team-wrapper">
+        <div id="team">
+            <div class="inner-wrapper">
+                <div class="row">
+                    <div class="container">
+                        <h2>
+                            Sizden Gelen
+                            <span>
+                                Yorumlar
+                            </span>
+                        </h2>
+
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div id="team-container">
+                                    <ul id="team-items">
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/1.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Founder
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/2.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Designer
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/3.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Developer
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/4.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Programmer
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/1.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Founder
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/2.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Designer
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/3.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Developer
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/4.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Programmer
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                                <div class="team-directions">
+                                    <span class="prev-items rounded">
+                                        <i class="fa fa-angle-left">
+                                        </i>
+                                    </span>
+                                    <span class="next-items rounded">
+                                        <i class="fa fa-angle-right">
+                                        </i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/#team-->
+    <!-- Client
+    ================================================== -->
+    <div id="client-wrapper">
+        <div id="client">
+            <div class="inner-wrapper">
+                <div class="row">
+                    <div class="container">
+                        <h2>Referanslarımıza <span>Göz Atın</span></h2>
+
+                        <div class="row">
+                            <div id="clients">
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <a href="#"><img src="~/TemaSweep/images/clients/1.png" alt=""></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <a href="#"><img src="~/TemaSweep/images/clients/2.png" alt=""></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <a href="#"><img src="~/TemaSweep/images/clients/3.png" alt=""></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <a href="#"><img src="~/TemaSweep/images/clients/4.png" alt=""></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <a href="#"><img src="~/TemaSweep/images/clients/5.png" alt=""></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <a href="#"><img src="~/TemaSweep/images/clients/6.png" alt=""></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <a href="#"><img src="~/TemaSweep/images/clients/7.png" alt=""></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <a href="#"><img src="~/TemaSweep/images/clients/8.png" alt=""></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <a href="#"><img src="~/TemaSweep/images/clients/9.png" alt=""></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <a href="#"><img src="~/TemaSweep/images/clients/10.png" alt=""></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <a href="#"><img src="~/TemaSweep/images/clients/11.png" alt=""></a>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                    <a href="#"><img src="~/TemaSweep/images/clients/12.png" alt=""></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#client -->
+
+    <div id="blog-wrapper">
+        <div id="blog">
+            <div class="inner-wrapper">
+                <div class="row">
+                    <div class="container">
+                        <h2>
+                            Son Yazılan
+                            <span>
+                                Bloglar
+                            </span>
+                        </h2>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="blog-posts-list">
+                                    <li class="active">
+                                        <span class="date">
+                                            September 01, 2013
+                                        </span>
+                                        <a href="#a" data-toggle="tab">
+                                            Logo bir markanın müşterileri üzerinde uyandıracağı ilk etki için çok önemlidir. Bu nedenle logo tasarımı yaparken çok dikkatli olunmalıdır. Tasarımın her ögesinde olduğu gibi logo tasarımında trendler takip edilmesi oldukça önemlidir. Peki En Yeni Tasarım Trendleri Nelerdir?   1. Açık ve Sade – (Minimalizm) Sade Tasarımlar sadece logo tasarımlarda değil genel olarak tüm tasarımlarda trend
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="date">
+                                            September 02, 2013
+                                        </span>
+                                        <a href="#b" data-toggle="tab">
+                                            PANTONE 17-5104 Ultimate Gray ve PANTONE 13-0647 Illuminating Yapılan açıklamaya göre ilk defa 2 renk seçildiği belirtildi. Birbirinden farklı 2 bağımsız renk…. Illuminating, Canlı, ışıldayan parlak, neşeli ve enerjisini yansıtan bir renktir. Ultimate Gray ise kuvvetli ve temel güvenin simgesidir. PANTONE Başkan Yardımcısı Laurie Pressman yaptığı açıklamada “Yılın Pantone Rengi, küresel kültürümüzde olup biteni yansıtıyor
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="date">
+                                            September 03, 2013
+                                        </span>
+                                        <a href="#c" data-toggle="tab">
+                                            Her yıl olduğu gibi 2021 yılı için Grafik Tasarım Fiyat Listesi aşağıda yer almaktadır. Aradığınız ürünün fiyatını listede bulamıyorsanız destek formunu doldurabilir veya Canlı Destek sisteminden iletişime geçebilirsiniz.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="date">
+                                            September 03, 2013
+                                        </span>
+                                        <a href="#d" data-toggle="tab">
+                                            Gümümüzdeki gelişen teknoloji ile yazılım programları, Kullanıcılar için bir çok tasarım programı alternatifi sunmaktadır. Bu programlar ile özgür ve sınırı olmayan bir çok tasarım, animasyon, çizim, ve üç boyutlu görüntüler gibi bir çok ögenin hayat bulması sağlanabilir. Grafik tasarım en önemli özelliği görselliğe dayalı bir iletişim aracı olmasıdır.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="date">
+                                            September 03, 2013
+                                        </span>
+                                        <a href="#d" data-toggle="tab">
+                                            İnsanların dikkatini çekmek için dışarıda yapılan her türlü pazarlamayı içerir. ve Birçok avantajı vardır. En popüler olanı Billboard tasarımlardır.   Dünyada Açık Hava Reklam Nasıl Başladı?  450’de Joannes Gutenberg hareketli tip baskıyı icat etti ve modern çağda reklam ilan şeklinde başladı. 1790’lı yılların sonuna doğru endüstri devrimi ile birlikte baskı sektörü de atak yapmıştır.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="date">
+                                            September 03, 2013
+                                        </span>
+                                        <a href="#d" data-toggle="tab">
+                                            Thirdamuno, ipsum dolor sit amet, consectetur
+                                            adipiscing elit.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="date">
+                                            September 03, 2013
+                                        </span>
+                                        <a href="#d" data-toggle="tab">
+                                            Thirdamuno, ipsum dolor sit amet, consectetur
+                                            adipiscing elit.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="date">
+                                            September 03, 2013
+                                        </span>
+                                        <a href="#d" data-toggle="tab">
+                                            İnsanların dikkatini çekmek için dışarıda yapılan her türlü pazarlamayı içerir. ve Birçok avantajı vardır. En popüler olanı Billboard tasarımlardır.   Dünyada Açık Hava Reklam Nasıl Başladı?  450’de Joannes Gutenberg hareketli tip baskıyı icat etti ve modern çağda reklam ilan şeklinde başladı. 1790’lı yılların sonuna doğru endüstri devrimi ile birlikte baskı sektörü de atak yapmıştır.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="date">
+                                            September 03, 2013
+                                        </span>
+                                        <a href="#d" data-toggle="tab">
+                                            Thirdamuno, ipsum dolor sit amet, consectetur
+                                            adipiscing elit.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="date">
+                                            September 03, 2013
+                                        </span>
+                                        <a href="#d" data-toggle="tab">
+                                            İnsanların dikkatini çekmek için dışarıda yapılan her türlü pazarlamayı içerir. ve Birçok avantajı vardır. En popüler olanı Billboard tasarımlardır.   Dünyada Açık Hava Reklam Nasıl Başladı?  450’de Joannes Gutenberg hareketli tip baskıyı icat etti ve modern çağda reklam ilan şeklinde başladı. 1790’lı yılların sonuna doğru endüstri devrimi ile birlikte baskı sektörü de atak yapmıştır.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="date">
+                                            September 03, 2013
+                                        </span>
+                                        <a href="#d" data-toggle="tab">
+                                            Thirdamuno, ipsum dolor sit amet, consectetur
+                                            adipiscing elit.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="date">
+                                            September 03, 2013
+                                        </span>
+                                        <a href="#d" data-toggle="tab">
+                                            Thirdamuno, ipsum dolor sit amet, consectetur
+                                            adipiscing elit.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="date">
+                                            September 03, 2013
+                                        </span>
+                                        <a href="#d" data-toggle="tab">
+                                            Thirdamuno, ipsum dolor sit amet, consectetur
+                                            adipiscing elit.
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="blog-directions">
+                                    <span class="prev-items rounded">
+                                        <i class="fa fa-angle-left">
+                                        </i>
+                                    </span>
+                                    <span class="next-items rounded">
+                                        <i class="fa fa-angle-right">
+                                        </i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tab-content blog-post-descriptions">
+                                    <div class="tab-pane active has-thumbnail" id="a">
+                                        <div class="entry-title">
+                                            <div class="blog-header-wrapper">
+                                                <div class="blog-date">
+                                                    <span class="blog-date-day">
+                                                        07
+                                                    </span>
+                                                    <span class="blog-date-other">
+                                                        Nov, 2013
+                                                    </span>
+                                                </div>
+                                                <div class="blog-title">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua
+                                                </div>
+                                            </div>
+                                            <div class="blog-entry-thumb">
+                                                <img src="~/TemaSweep/images/blog/blog.jpg" class="img-responsive" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="entry-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum.
+                                            </p>
+                                            <a class="readmore" data-linktype="modal" data-modalclass="blog-style" href="blog-single1.html">
+                                                Read
+                                                more <i class=" fa fa-arrow-circle-o-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="b">
+                                        <div class="entry-title">
+                                            <div class="blog-header-wrapper">
+                                                <div class="blog-date">
+                                                    <span class="blog-date-day">
+                                                        07
+                                                    </span>
+                                                    <span class="blog-date-other">
+                                                        Nov, 2013
+                                                    </span>
+                                                </div>
+                                                <div class="blog-title">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="entry-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum.
+                                            </p>
+                                            <a class="readmore" data-linktype="modal" data-modalclass="blog-style" href="blog-single1.html">
+                                                Read
+                                                more <i class=" fa fa-arrow-circle-o-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane has-thumbnail" id="c">
+                                        <div class="entry-title">
+                                            <div class="blog-header-wrapper">
+                                                <div class="blog-date">
+                                                    <span class="blog-date-day">
+                                                        07
+                                                    </span>
+                                                    <span class="blog-date-other">
+                                                        Nov, 2013
+                                                    </span>
+                                                </div>
+                                                <div class="blog-title">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua
+                                                </div>
+                                            </div>
+                                            <div class="blog-entry-thumb">
+                                                <img src="~/TemaSweep/images/blog/blog.jpg" class="img-responsive" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="entry-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum.
+                                            </p>
+                                            <a class="readmore" data-linktype="modal" data-modalclass="blog-style" href="blog-single1.html">
+                                                Read
+                                                more <i class=" fa fa-arrow-circle-o-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="d">
+                                        <div class="entry-title">
+                                            <div class="blog-header-wrapper">
+                                                <div class="blog-date">
+                                                    <span class="blog-date-day">
+                                                        07
+                                                    </span>
+                                                    <span class="blog-date-other">
+                                                        Nov, 2013
+                                                    </span>
+                                                </div>
+                                                <div class="blog-title">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="entry-content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum.
+                                            </p>
+                                            <a class="readmore" data-linktype="modal" data-modalclass="blog-style" href="blog-single1.html">
+                                                Read
+                                                more <i class=" fa fa-arrow-circle-o-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/#blog-->
+    <!-- Online Education
+    ================================================== -->
+
+    <div id="online-edu">
+        <div id="services">
+            <div class="inner-wrapper">
+                <div class="container">
+                    <h2>Online Eğitim Almak<span>İster misiniz?</span></h2>
+
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-diamond"></i>
+
+                                <h3>Web Geliştirme</h3>
+
+                                <p>
+                                    Her türlü web projenizi Asp, Php, Javascript, Css, Bootstrap,modern ve esnek Net Core ile geliştirelim.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-lightbulb"></i>
+
+                                <h3>Yenilikçi Fikirler</h3>
+
+                                <p>
+                                    Sıradışı fikirler ile işinizi birlikte büyütelim.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-beaker"></i>
+
+                                <h3>Profesyonel Çözümler</h3>
+
+                                <p>
+                                    Her biri kendi alanında uzman ekibimizle, ihtiyaçlarınıza uzman görüşüyle hizmetinizdeyiz.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-pencil"></i>
+
+                                <h3>Web Tasarım</h3>
+
+                                <p>
+                                    Estetik, şık, kullanışlı siteler ile müşterilerinizi etkileyin.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-paper-plane"></i>
+
+                                <h3>Masaüstü/Mobil Uygulama</h3>
+
+                                <p>
+                                    İster işiniz ister kişisel projeleriniz için uygulama geliştirme hizmeti...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-star"></i>
+
+                                <h3>3 Boyutlu Tasarım / Baskı</h3>
+
+                                <p>
+                                    Promosyon, hediyelik veya teknik parçalar üretmek bizim işimiz. Fikir-Tasarım-Üretim aşamalarında hizmetinizdeyiz.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-heart"></i>
+
+                                <h3>Markalaşma</h3>
+
+                                <p>
+                                    Ön Görüşme ve Marka Tanımlama, Rakip Firmaların İncelenmesi, Tasarım Araştırması, Tasarım Eksizi ve Ön Tasarım, Sunum Yapılması, Tasarım Sürecinin Tamamlanması...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-box service-fold">
+                                <i class="hippo-icon-photo"></i>
+
+                                <h3>Grafik Tasarım</h3>
+
+                                <p>
+                                    Logo Tasarımı, Kurumsal Kimlik Tasarımı, Banner Tasarımı, Broşür-El ilanı Tasarımı, Katalog Tasarımı, Ambalaj Tasarımı, Menü Tasarımı...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/#services-->
+    <!-- Portfolio
+    ================================================== -->
+    <div id="free-support">
+        <div id="portfolio">
+            <div class="inner-wrapper">
+                <div class="row">
+                    <div class="container">
+                        <h2>Portföyümüze <span>Göz Atın</span></h2>
+
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div id="portfolio-container">
+                                    <ul id="portfolio-items">
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/1.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-info rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Web Tasarım, Geliştirme,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/2.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-check rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Web Tasarım,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/3.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-cog rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Menü Tasarımı,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/4.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-pencil rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Katalog Tasarımı,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/5.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-rocket rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">3d Baskı,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/4.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa fa-thumbs-o-up rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Masaüstü Uygulama Geliştirme,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/3.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-info rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Sosyal Ağ Yazılım,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/2.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-wrench rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">3d Tasarım, Baskı</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/1.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-magic rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Broşür Tasarımı,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="portfolio-item">
+                                            <div>
+                                                <img class="img-responsive" src="~/TemaSweep/images/portfolio/2.png" alt="">
+
+                                                <div class="portfolio-item-description">
+                                                    <div>
+                                                        <a data-linktype="modal" data-modalclass="portfolio-style"
+                                                           href="portfolio1.html"
+                                                           class="fa fa-info rounded"></a>
+
+                                                        <h3>İçeriğe gözat</h3>
+
+                                                        <p class="project-tag">Mobil Uygulama Geliştirme,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="portfolio-directions">
+                                    <span class="prev-items rounded"><i class="fa fa-angle-left"></i></span>
+                                    <span class="next-items rounded"><i class="fa fa-angle-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/#portfolio-->
+    <!-- About us
+    ================================================== -->
+    <div id="take-price">
+        <div id="aboutus">
+            <div class="inner-wrapper">
+                <div class="row">
+                    <div class="container">
+                        <h2>Hakkımızda <span> Daha Fazlasını Öğrenin</span></h2>
+
+                        <div class="row contents">
+                            <div class="col-md-6">
+                                <p>
+                                    On the other hand, we denounce with righteous indignation and dislike men who are
+                                    so
+                                    beguiled and demoralized by the charms of pleasure of the moment, so blinded by
+                                    desire,
+                                    that they cannot foresee the pain and trouble that are bound to ensue; and equal
+                                    blame
+                                    belongs to those who fail in their duty through weakness of will, which is the same
+                                    as
+                                    saying through shrinking from toil and pain.
+                                </p>
+
+                                <p>
+                                    These cases are perfectly simple and easy to distinguish. In a free hour, when our
+                                    power
+                                    of choice is untrammelled and when nothing prevents our being able to do what we
+                                    like
+                                    best,
+                                </p>
+
+                                <p>
+                                    every pleasure is to be welcomed and every pain avoided. But in certain
+                                    circumstances
+                                    and owing to the claims of duty or the obligations of business it will frequently
+                                    occur
+                                    that pleasures have to be repudiated and annoyances accepted. The wise man
+                                    therefore
+                                    always holds in these matters to this principle of selection: he rejects pleasures
+                                    to
+                                    secure other greater pleasures, or else he endures pains to avoid worse pains.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Our Skills</h3>
+
+                                <p>
+                                    every pleasure is to be welcomed and every pain avoided. But in certain
+                                    circumstances
+                                    and
+                                    owing to the claims of duty or the obligations of business it will frequently occur
+                                    that
+                                    pleasures have to be repudiated
+                                </p>
+
+                                <div class="progress-bars">
+                                    <div class="skill-progress" data-skill="75%">CSS</div>
+                                    <div class="skill-progress" data-skill="60%">HTML</div>
+                                    <div class="skill-progress" data-skill="90%">PHP</div>
+                                    <div class="skill-progress" data-skill="55%">Photoshop</div>
+                                </div>
+                                <div class="connect">
+                                    <h3>Bizimle İletişime Geçin</h3>
+
+                                    <div class="social-shares">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/#about-us-->
+    <!-- Team
+    ================================================== -->
+    <div id="send-cv">
+        <div id="team">
+            <div class="inner-wrapper">
+                <div class="row">
+                    <div class="container">
+                        <h2>
+                            Sizden Gelen
+                            <span>
+                                Yorumlar
+                            </span>
+                        </h2>
+
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div id="team-container">
+                                    <ul id="team-items">
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/1.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Founder
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/2.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Designer
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/3.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Developer
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/4.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Programmer
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/1.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Founder
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/2.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Designer
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/3.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Developer
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="team-member">
+                                            <div>
+                                                <div class="img-wrapper">
+                                                    <img class="img-responsive" src="~/TemaSweep/images/team/4.jpg" alt="">
+                                                </div>
+                                                <div class="team-item-description">
+                                                    <div class="description">
+                                                        <h3>
+                                                            Amili milton
+                                                        </h3>
+                                                        <h4>
+                                                            Programmer
+                                                        </h4>
+                                                    </div>
+                                                    <div class="social social-shares">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-twitter">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-facebook">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-dribbble">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-google-plus">
+                                                                    </i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                                <div class="team-directions">
+                                    <span class="prev-items rounded">
+                                        <i class="fa fa-angle-left">
+                                        </i>
+                                    </span>
+                                    <span class="next-items rounded">
+                                        <i class="fa fa-angle-right">
+                                        </i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/#team-->
+    <!-- Client
+    ================================================== -->
+
+
+    <div id="contact-wrapper">
+        <div id="contact">
+            <div class="inner-wrapper">
+                <div class="row">
+                    <div class="container">
+                        <h2><span>Bize</span> Ulaşın</h2>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="map-canvas"></div>
+                                <div class="contact-info">
+                                    <ul>
+                                        <li class="first">
+                                            <p><i class="fa fa-map-marker fa-2"></i> Sweep inc.</p>
+
+                                            <p> 9870 St Vincent Place, Glasgow, DC 45 Fr 45.</p>
+                                        </li>
+                                        <li class="second">
+                                            <p><i class="fa fa-phone fa-2"></i> +0088776 69 900</p>
+
+                                            <p><i class="fa fa-envelope fa-2"></i> main@example.com </p>
+                                        </li>
+                                        <li class="third">
+                                            <p><i class="fa fa-clock-o fa-2"></i> Monday - Friday</p>
+
+                                            <p> 9:00 AM - 6:00 AM</p>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="message-box">
+                                    <h3>Mesaj Gönderin</h3>
+
+                                    <form method="post" action="#">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="email" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <textarea class="form-control" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="submit" class="readmore send-button"
+                                                       value="Gönder">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/#contact-wrapper-->
+</div>
+

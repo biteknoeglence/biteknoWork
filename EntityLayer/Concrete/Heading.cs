@@ -16,9 +16,9 @@ namespace EntityLayer.Concrete
         public DateTime HeadingCreateDate { get; set; }
         public bool HeadingStatus { get; set; }
 
-        public int CategoryID { get; set; }
-        public Category Category { get; set; }
+        public int PartID { get; set; }
+        public Part Part { get; set; }
 
-        public List<Part> Parts { get; set; }
+        public List<Product> Products { get; set; }
     }
 }

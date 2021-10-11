@@ -14,10 +14,15 @@ namespace EntityLayer.Concrete
         public string ProductName { get; set; }
         public string ProductContent { get; set; }
         public string ProductPrice { get; set; }
+        public string ProductImage { get; set; }
+        public DateTime ProductDate { get; set; }
         public bool ProductStatus { get; set; }
 
-        public int PartID { get; set; }
-        public Part Part { get; set; }
+        public int HeadingID { get; set; }
+        public Heading Heading { get; set; }
+
+        public int MemberID { get; set; }
+        public Member Member { get; set; }
 
         public List<Comment> Comments { get; set; }
     }

@@ -1,0 +1,24 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Comment>
+
+<div class="media">
+    @foreach (var item in Model)
+    {
+        <div class="pull-left">
+            <img class="avatar" src="~/TemaSweep/images/blog/avatar1.jpg" alt="">
+        </div>
+
+        <div class="media-body">
+            <div class="comment-content">
+                <div class="media-heading">
+                    <a class="pull-right reply" href="#">Reply</a>
+                    <strong>@item.CommentUserName</strong>
+                    <small>@(((DateTime)item.CommentDate).ToString("dd-MMM-yyyy"))</small>
+                </div>
+                <p>
+                    @item.CommentContent
+                </p>
+            </div>
+            <!--/.media-->
+        </div>
+    }
+</div>

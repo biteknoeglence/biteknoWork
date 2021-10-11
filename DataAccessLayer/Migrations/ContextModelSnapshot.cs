@@ -119,10 +119,13 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("CommentTitle")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProductIC")
-                        .HasColumnType("int");
+                    b.Property<string>("CommentUserMail")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ProductID")
+                    b.Property<string>("CommentUserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductID")
                         .HasColumnType("int");
 
                     b.HasKey("CommentID");
@@ -193,9 +196,6 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CategoryID")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("HeadingCreateDate")
                         .HasColumnType("datetime2");
 
@@ -208,9 +208,12 @@ namespace DataAccessLayer.Migrations
                     b.Property<bool>("HeadingStatus")
                         .HasColumnType("bit");
 
+                    b.Property<int>("PartID")
+                        .HasColumnType("int");
+
                     b.HasKey("HeadingID");
 
-                    b.HasIndex("CategoryID");
+                    b.HasIndex("PartID");
 
                     b.ToTable("Headings");
                 });
@@ -246,9 +249,30 @@ namespace DataAccessLayer.Migrations
                     b.Property<bool>("MemberStatus")
                         .HasColumnType("bit");
 
+                    b.Property<string>("PasswordConfirm")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("MemberID");
 
                     b.ToTable("Members");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.NewsLetter", b =>
+                {
+                    b.Property<int>("MailID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Mail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("MailStatus")
+                        .HasColumnType("bit");
+
+                    b.HasKey("MailID");
+
+                    b.ToTable("NewsLetters");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Part", b =>
@@ -258,7 +282,7 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("HeadingID")
+                    b.Property<int>("CategoryID")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("PartCreateDate")
@@ -281,7 +305,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("PartID");
 
-                    b.HasIndex("HeadingID");
+                    b.HasIndex("CategoryID");
 
                     b.ToTable("Parts");
                 });
@@ -293,10 +317,19 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("PartID")
+                    b.Property<int>("HeadingID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MemberID")
                         .HasColumnType("int");
 
                     b.Property<string>("ProductContent")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ProductDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ProductImage")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")
@@ -310,7 +343,9 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("ProductID");
 
-                    b.HasIndex("PartID");
+                    b.HasIndex("HeadingID");
+
+                    b.HasIndex("MemberID");
 
                     b.ToTable("Products");
                 });
@@ -319,37 +354,17 @@ namespace DataAccessLayer.Migrations
                 {
                     b.HasOne("EntityLayer.Concrete.Product", "Product")
                         .WithMany("Comments")
-                        .HasForeignKey("ProductID");
+                        .HasForeignKey("ProductID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Product");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Heading", b =>
                 {
-                    b.HasOne("EntityLayer.Concrete.Category", "Category")
-                        .WithMany("Headings")
-                        .HasForeignKey("CategoryID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.Part", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.Heading", "Heading")
-                        .WithMany("Parts")
-                        .HasForeignKey("HeadingID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Heading");
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.Product", b =>
-                {
                     b.HasOne("EntityLayer.Concrete.Part", "Part")
-                        .WithMany("Products")
+                        .WithMany("Headings")
                         .HasForeignKey("PartID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -357,19 +372,54 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("Part");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.Category", b =>
+            modelBuilder.Entity("EntityLayer.Concrete.Part", b =>
                 {
-                    b.Navigation("Headings");
+                    b.HasOne("EntityLayer.Concrete.Category", "Category")
+                        .WithMany("Parts")
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.Heading", b =>
+            modelBuilder.Entity("EntityLayer.Concrete.Product", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.Heading", "Heading")
+                        .WithMany("Products")
+                        .HasForeignKey("HeadingID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityLayer.Concrete.Member", "Member")
+                        .WithMany("Products")
+                        .HasForeignKey("MemberID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Heading");
+
+                    b.Navigation("Member");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Category", b =>
                 {
                     b.Navigation("Parts");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.Part", b =>
+            modelBuilder.Entity("EntityLayer.Concrete.Heading", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Member", b =>
+                {
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Part", b =>
+                {
+                    b.Navigation("Headings");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Product", b =>

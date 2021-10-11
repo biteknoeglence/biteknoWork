@@ -25,5 +25,9 @@ namespace DataAccessLayer.Concrete
         public DbSet<Member> Members { get; set; }
         public DbSet<Part> Parts { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<NewsLetter> NewsLetters { get; set; }
+
     }
+
+
 }
